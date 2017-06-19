@@ -478,7 +478,7 @@ func (tl TypeLoader) LoadRelkind(args *ArgType, relType RelType) (map[string]*Ty
 			}
 		}
 
-		if !include {
+		if include {
 			continue
 		}
 
