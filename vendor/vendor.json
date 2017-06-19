@@ -1,0 +1,176 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "kjygOPbr5jsND2nU4NJnyyDRVF8=",
+			"path": "github.com/alexflint/go-arg",
+			"revision": "cef6506c97e5731da728c374ff3523e481026423",
+			"revisionTime": "2017-03-30T21:10:29Z"
+		},
+		{
+			"checksumSHA1": "M5vBatiAKUjyLYrb9nS+6QbpEjE=",
+			"origin": "github.com/alexflint/go-arg/vendor/github.com/alexflint/go-scalar",
+			"path": "github.com/alexflint/go-scalar",
+			"revision": "cef6506c97e5731da728c374ff3523e481026423",
+			"revisionTime": "2017-03-30T21:10:29Z"
+		},
+		{
+			"checksumSHA1": "QwashqiYFM8ecxNNeiTERnjEIFQ=",
+			"path": "github.com/denisenkom/go-mssqldb",
+			"revision": "a8b933e3527b526484b3b4de754ce7c179e8bfd0",
+			"revisionTime": "2017-06-13T20:06:07Z"
+		},
+		{
+			"checksumSHA1": "SYxDN6l6j6OJ9f9BQDzneaJBd0k=",
+			"path": "github.com/gedex/inflector",
+			"revision": "16278e9db8130ac7ec405dc174cfb94344f16325",
+			"revisionTime": "2017-03-07T19:08:18Z"
+		},
+		{
+			"checksumSHA1": "Yi7+P8UCCOlHzzpWEN0U2nlGvz0=",
+			"path": "github.com/go-sql-driver/mysql",
+			"revision": "8fefef06da7707b5a3cda42195a6b409c9c9ab5c",
+			"revisionTime": "2017-06-16T13:16:31Z"
+		},
+		{
+			"checksumSHA1": "Ryo47h80cVDOCvImx/fRbged+Hw=",
+			"path": "github.com/knq/dburl",
+			"revision": "4f69f2dea7d98df2086a2837072fc60ca14335d9",
+			"revisionTime": "2017-03-30T11:57:25Z"
+		},
+		{
+			"checksumSHA1": "oNRwiO9Mg472aUT1U5ycnN04aQw=",
+			"path": "github.com/knq/snaker",
+			"revision": "691f0587dd2b3a538f6f3eed910a63b793b40ecf",
+			"revisionTime": "2016-12-18T08:23:49Z"
+		},
+		{
+			"checksumSHA1": "VeaLiClVvEJ5YzrnddzwOGreZ6E=",
+			"path": "github.com/knq/xo/examples/booktest/mssql/models",
+			"revision": "8c7b73d046b4e7fb6f39a9e541a2edc79bc15f08",
+			"revisionTime": "2017-04-22T19:23:00Z"
+		},
+		{
+			"checksumSHA1": "YLwMX3JR/ADinJqJiwV77d8zSmo=",
+			"path": "github.com/knq/xo/examples/booktest/mysql/models",
+			"revision": "8c7b73d046b4e7fb6f39a9e541a2edc79bc15f08",
+			"revisionTime": "2017-04-22T19:23:00Z"
+		},
+		{
+			"checksumSHA1": "4C1+bqAKOGwGuXAtdfuCUg66TnQ=",
+			"path": "github.com/knq/xo/examples/booktest/oracle/models",
+			"revision": "8c7b73d046b4e7fb6f39a9e541a2edc79bc15f08",
+			"revisionTime": "2017-04-22T19:23:00Z"
+		},
+		{
+			"checksumSHA1": "QMV2qqWySiRz6E4EuutDMe21x74=",
+			"path": "github.com/knq/xo/examples/booktest/postgres/models",
+			"revision": "8c7b73d046b4e7fb6f39a9e541a2edc79bc15f08",
+			"revisionTime": "2017-04-22T19:23:00Z"
+		},
+		{
+			"checksumSHA1": "Nm9o52K/X5lbhaAqARlortCHASo=",
+			"path": "github.com/knq/xo/examples/booktest/sqlite3/models",
+			"revision": "8c7b73d046b4e7fb6f39a9e541a2edc79bc15f08",
+			"revisionTime": "2017-04-22T19:23:00Z"
+		},
+		{
+			"checksumSHA1": "Slx8wLbcb3GYu3sqyYKud02yzEs=",
+			"path": "github.com/knq/xo/examples/pgcatalog/pgtypes",
+			"revision": "8c7b73d046b4e7fb6f39a9e541a2edc79bc15f08",
+			"revisionTime": "2017-04-22T19:23:00Z"
+		},
+		{
+			"checksumSHA1": "+mK8oe3r5Z9YJtfi2TKwaF8WxAQ=",
+			"path": "github.com/knq/xo/internal",
+			"revision": "8c7b73d046b4e7fb6f39a9e541a2edc79bc15f08",
+			"revisionTime": "2017-04-22T19:23:00Z"
+		},
+		{
+			"checksumSHA1": "0QL3FOCzyUK5CfEobtxDyhhaTxs=",
+			"path": "github.com/knq/xo/loaders",
+			"revision": "8c7b73d046b4e7fb6f39a9e541a2edc79bc15f08",
+			"revisionTime": "2017-04-22T19:23:00Z"
+		},
+		{
+			"checksumSHA1": "fjtrUMcSiEzRnhfTrKOz9UEAz5I=",
+			"path": "github.com/knq/xo/models",
+			"revision": "8c7b73d046b4e7fb6f39a9e541a2edc79bc15f08",
+			"revisionTime": "2017-04-22T19:23:00Z"
+		},
+		{
+			"checksumSHA1": "qR/V4+PV9ibxJQgTbCxNaoowN1M=",
+			"path": "github.com/knq/xo/tplbin",
+			"revision": "8c7b73d046b4e7fb6f39a9e541a2edc79bc15f08",
+			"revisionTime": "2017-04-22T19:23:00Z"
+		},
+		{
+			"checksumSHA1": "B0DqOaS0pRnbQC0ufqPCC/krbDE=",
+			"path": "github.com/knq/xoutil",
+			"revision": "fa9689445f62e4799e822bdb51e90416234b0637",
+			"revisionTime": "2017-03-04T03:23:41Z"
+		},
+		{
+			"checksumSHA1": "59GLF6BpwzrzKVII/PlrguAAwb4=",
+			"path": "github.com/lib/pq",
+			"revision": "19eeca3e30d2577b1761db471ec130810e67f532",
+			"revisionTime": "2015-01-09T11:14:58Z"
+		},
+		{
+			"checksumSHA1": "+szf9XFd9UdUG6RdpXWRJK0jryo=",
+			"path": "github.com/lib/pq/oid",
+			"revision": "19eeca3e30d2577b1761db471ec130810e67f532",
+			"revisionTime": "2015-01-09T11:14:58Z"
+		},
+		{
+			"checksumSHA1": "fCSHWojsckzvaLUoo0vuU690CvY=",
+			"path": "github.com/mattn/go-sqlite3",
+			"revision": "e28cd440fabdd39b9520344bc26829f61db40ece",
+			"revisionTime": "2015-03-23T23:48:55Z"
+		},
+		{
+			"checksumSHA1": "rJab1YdNhQooDiBWNnt7TLWPyBU=",
+			"path": "github.com/pkg/errors",
+			"revision": "c605e284fe17294bda444b34710735b29d1a9d90",
+			"revisionTime": "2017-05-05T04:36:39Z"
+		},
+		{
+			"checksumSHA1": "MCeXr2RNeiG1XG6V+er1OR0qyeo=",
+			"path": "golang.org/x/crypto/md4",
+			"revision": "93b5df3bf36996258d005da151953da2030e346b",
+			"revisionTime": "2017-06-03T10:40:02Z"
+		},
+		{
+			"checksumSHA1": "Y+HGqEkYM15ir+J93MEaHdyFy0c=",
+			"path": "golang.org/x/net/context",
+			"revision": "973f3f3bbd50e92b13faa6c53ec16f49b45e851c",
+			"revisionTime": "2017-06-16T05:16:31Z"
+		},
+		{
+			"checksumSHA1": "S0DP7Pn7sZUmXc55IzZnNvERu6s=",
+			"path": "golang.org/x/sync/errgroup",
+			"revision": "f52d1811a62927559de87708c8913c1650ce4f26",
+			"revisionTime": "2017-05-17T20:25:26Z"
+		},
+		{
+			"checksumSHA1": "BK/Yup4Ut43sI9OL7dyTiqC+bwI=",
+			"path": "gopkg.in/rana/ora.v4",
+			"revision": "fa34ede8c4f1b83b6c6c6565745e8670629a2b5a",
+			"revisionTime": "2017-05-23T14:09:24Z"
+		},
+		{
+			"checksumSHA1": "eb7n//W2ifbgTNGmrL7NnvZi/DU=",
+			"path": "gopkg.in/rana/ora.v4/date",
+			"revision": "fa34ede8c4f1b83b6c6c6565745e8670629a2b5a",
+			"revisionTime": "2017-05-23T14:09:24Z"
+		},
+		{
+			"checksumSHA1": "1yIMtU64nASjTJpCihJwk1xmLWA=",
+			"path": "gopkg.in/rana/ora.v4/num",
+			"revision": "fa34ede8c4f1b83b6c6c6565745e8670629a2b5a",
+			"revisionTime": "2017-05-23T14:09:24Z"
+		}
+	],
+	"rootPath": "github.com/hnlq715/xo"
+}
