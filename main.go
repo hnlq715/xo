@@ -16,8 +16,8 @@ import (
 
 	"github.com/alexflint/go-arg"
 
+	"github.com/hnlq715/xo/internal"
 	"github.com/knq/dburl"
-	"github.com/knq/xo/internal"
 	"github.com/knq/xo/models"
 
 	_ "github.com/knq/xo/loaders"
