@@ -5,8 +5,8 @@ import (
 	"strings"
 	"text/template"
 
+	"github.com/hnlq715/xo/models"
 	"github.com/knq/snaker"
-	"github.com/knq/xo/models"
 )
 
 // NewTemplateFuncs returns a set of template funcs bound to the supplied args.
@@ -21,6 +21,7 @@ func (a *ArgType) NewTemplateFuncs() template.FuncMap {
 		"goparamlist":    a.goparamlist,
 		"reniltype":      a.reniltype,
 		"retype":         a.retype,
+		"pbtype":         a.pbtype,
 		"shortname":      a.shortname,
 		"convext":        a.convext,
 		"schema":         a.schemafn,
@@ -28,6 +29,17 @@ func (a *ArgType) NewTemplateFuncs() template.FuncMap {
 		"hascolumn":      a.hascolumn,
 		"hasfield":       a.hasfield,
 	}
+}
+
+// pbtype checks typ against sql.Null types
+func (a *ArgType) pbtype(typ string) string {
+
+	ft := a.retype(typ)
+	if strings.HasPrefix(ft, "sql.Null") {
+		ft = strings.ToLower(ft[8:])
+	}
+
+	return ft
 }
 
 // retype checks typ against known types, and prefixing

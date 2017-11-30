@@ -7,8 +7,8 @@ import (
 
 	"github.com/gedex/inflector"
 
+	"github.com/hnlq715/xo/models"
 	"github.com/knq/snaker"
-	"github.com/knq/xo/models"
 )
 
 // Loader is the common interface for database drivers that can generate code
@@ -475,10 +475,11 @@ func (tl TypeLoader) LoadRelkind(args *ArgType, relType RelType) (map[string]*Ty
 			if includeTable == ti.TableName {
 				// Skip adding this table if user has specified they are interested.
 				include = false
+				break
 			}
 		}
 
-		if include {
+		if !include {
 			continue
 		}
 

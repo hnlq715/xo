@@ -18,9 +18,9 @@ import (
 
 	"github.com/hnlq715/xo/internal"
 	"github.com/knq/dburl"
-	"github.com/knq/xo/models"
+	"github.com/hnlq715/xo/models"
 
-	_ "github.com/knq/xo/loaders"
+	_ "github.com/hnlq715/xo/loaders"
 	_ "github.com/knq/xoutil"
 )
 

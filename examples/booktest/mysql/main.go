@@ -10,7 +10,7 @@ import (
 
 	"github.com/knq/dburl"
 
-	"github.com/knq/xo/examples/booktest/mysql/models"
+	"github.com/hnlq715/xo/examples/booktest/mysql/models"
 )
 
 var flagVerbose = flag.Bool("v", false, "verbose")

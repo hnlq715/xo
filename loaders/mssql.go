@@ -6,8 +6,8 @@ import (
 	_ "github.com/denisenkom/go-mssqldb"
 
 	"github.com/knq/snaker"
-	"github.com/knq/xo/internal"
-	"github.com/knq/xo/models"
+	"github.com/hnlq715/xo/internal"
+	"github.com/hnlq715/xo/models"
 )
 
 func init() {
