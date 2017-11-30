@@ -12,6 +12,7 @@ import (
 // NewTemplateFuncs returns a set of template funcs bound to the supplied args.
 func (a *ArgType) NewTemplateFuncs() template.FuncMap {
 	return template.FuncMap{
+		"add":            a.add,
 		"colcount":       a.colcount,
 		"colnames":       a.colnames,
 		"colnamesquery":  a.colnamesquery,
@@ -29,6 +30,11 @@ func (a *ArgType) NewTemplateFuncs() template.FuncMap {
 		"hascolumn":      a.hascolumn,
 		"hasfield":       a.hasfield,
 	}
+}
+
+// add m with n
+func (a *ArgType) add(m, n int) int {
+	return m + n
 }
 
 // pbtype checks typ against sql.Null types
