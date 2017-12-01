@@ -9,12 +9,13 @@ import (
 
 // Column represents column info.
 type Column struct {
-	FieldOrdinal int            // field_ordinal
-	ColumnName   string         // column_name
-	DataType     string         // data_type
-	NotNull      bool           // not_null
-	DefaultValue sql.NullString // default_value
-	IsPrimaryKey bool           // is_primary_key
+	FieldOrdinal  int            // field_ordinal
+	ColumnName    string         // column_name
+	ColumnComment string         // column_comment
+	DataType      string         // data_type
+	NotNull       bool           // not_null
+	DefaultValue  sql.NullString // default_value
+	IsPrimaryKey  bool           // is_primary_key
 }
 
 // PgTableColumns runs a custom query, returning results as Column.
@@ -93,7 +94,7 @@ func MyTableColumns(db XODB, schema string, table string) ([]*Column, error) {
 		c := Column{}
 
 		// scan
-		err = q.Scan(&c.FieldOrdinal, &c.ColumnName, &c.DataType, &c.NotNull, &c.DefaultValue, &c.IsPrimaryKey)
+		err = q.Scan(&c.FieldOrdinal, &c.ColumnName, &c.ColumnName, &c.DataType, &c.NotNull, &c.DefaultValue, &c.IsPrimaryKey)
 		if err != nil {
 			return nil, err
 		}
