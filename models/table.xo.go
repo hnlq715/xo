@@ -55,6 +55,7 @@ func MyTables(db XODB, schema string, relkind string) ([]*Table, error) {
 	// sql query
 	const sqlstr = `SELECT ` +
 		`table_name ` +
+		`table_comment ` +
 		`FROM information_schema.tables ` +
 		`WHERE table_schema = ? AND table_type = ?`
 
