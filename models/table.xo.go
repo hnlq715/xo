@@ -5,10 +5,10 @@ package models
 
 // Table represents table info.
 type Table struct {
-	Type        string // type
-	TableName   string // table_name
-	TableColumn string // table_column
-	ManualPk    bool   // manual_pk
+	Type         string // type
+	TableName    string // table_name
+	TableComment string // table_comment
+	ManualPk     bool   // manual_pk
 }
 
 // PgTables runs a custom query, returning results as Table.
@@ -74,7 +74,7 @@ func MyTables(db XODB, schema string, relkind string) ([]*Table, error) {
 		t := Table{}
 
 		// scan
-		err = q.Scan(&t.TableName, &t.TableColumn)
+		err = q.Scan(&t.TableName, &t.TableComment)
 		if err != nil {
 			return nil, err
 		}

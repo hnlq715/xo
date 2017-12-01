@@ -94,7 +94,7 @@ func MyTableColumns(db XODB, schema string, table string) ([]*Column, error) {
 		c := Column{}
 
 		// scan
-		err = q.Scan(&c.FieldOrdinal, &c.ColumnName, &c.ColumnName, &c.DataType, &c.NotNull, &c.DefaultValue, &c.IsPrimaryKey)
+		err = q.Scan(&c.FieldOrdinal, &c.ColumnName, &c.ColumnComment, &c.DataType, &c.NotNull, &c.DefaultValue, &c.IsPrimaryKey)
 		if err != nil {
 			return nil, err
 		}
