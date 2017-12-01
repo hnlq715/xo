@@ -45,6 +45,18 @@ func (a *ArgType) pbtype(typ string) string {
 		ft = strings.ToLower(ft[8:])
 	}
 
+	switch ft {
+	case "float32":
+		ft = "float"
+	case "float64":
+		ft = "double"
+	case "int", "int8", "int16":
+		ft = "int32"
+	case "uint", "uint8", "uint16":
+		ft = "uint32"
+	default:
+	}
+
 	return ft
 }
 

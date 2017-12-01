@@ -162,8 +162,8 @@ func NewDefaultArgs() *ArgType {
 
 	return &ArgType{
 		Suffix:              ".xo.go",
-		Int32Type:           "int",
-		Uint32Type:          "uint",
+		Int32Type:           "int32",
+		Uint32Type:          "uint32",
 		ForeignKeyMode:      &fkMode,
 		QueryParamDelimiter: "%%",
 		NameConflictSuffix:  "Val",

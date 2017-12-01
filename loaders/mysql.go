@@ -5,9 +5,9 @@ import (
 
 	_ "github.com/go-sql-driver/mysql"
 
-	"github.com/knq/snaker"
 	"github.com/hnlq715/xo/internal"
 	"github.com/hnlq715/xo/models"
+	"github.com/knq/snaker"
 )
 
 func init() {
@@ -125,15 +125,15 @@ switchDT:
 
 	case "tinyint":
 		//people using tinyint(1) really want a bool
-		if precision == 1 {
-			nilVal = "false"
-			typ = "bool"
-			if nullable {
-				nilVal = "sql.NullBool{}"
-				typ = "sql.NullBool"
-			}
-			break
-		}
+		// if precision == 1 {
+		// 	nilVal = "false"
+		// 	typ = "uint8"
+		// 	if nullable {
+		// 		nilVal = "sql.NullBool{}"
+		// 		typ = "sql.NullBool"
+		// 	}
+		// 	break
+		// }
 		nilVal = "0"
 		typ = "int8"
 		if nullable {
