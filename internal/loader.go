@@ -469,12 +469,11 @@ func (tl TypeLoader) LoadRelkind(args *ArgType, relType RelType) (map[string]*Ty
 	// tables
 	tableMap := make(map[string]*Type)
 	for _, ti := range tableList {
-		include := true
+		include := false
 
 		for _, includeTable := range args.IncludeTables {
 			if includeTable == ti.TableName {
-				// Skip adding this table if user has specified they are interested.
-				include = false
+				include = true
 				break
 			}
 		}
