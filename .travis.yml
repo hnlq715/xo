@@ -9,7 +9,7 @@ go:
 - 1.9.4
 
 before_install:
-  - sudo cp -aL vendor/gopkg.in/rana/ora.v4/contrib/oci8.pc /usr/lib/pkgconfig/oci8.pc
+  - sudo cp -aL vendor/gopkg.in/rana/ora.v4/contrib/oci8_linux_amd64.pc /usr/lib/pkgconfig/oci8.pc
   - ls /usr/lib/pkgconfig/
 
 after_success:
