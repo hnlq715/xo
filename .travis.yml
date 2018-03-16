@@ -1,0 +1,25 @@
+sudo: required
+
+services:
+  - docker
+
+language: go
+
+go:
+- 1.9.4
+
+install:
+  - sudo cp -aL vendor/gopkg.in/rana/ora.v4/contrib/oci8_linux_amd64.pc /usr/lib/pkgconfig/oci8.pc
+  - ls /usr/lib/pkgconfig/
+
+script:
+  - go build
+
+after_success:
+  - echo $DOCKER_PASS | docker login -u "$DOCKER_USER" --password-stdin
+  - export REPO=sophos/xo
+  - export TAG=`if [ "$TRAVIS_BRANCH" == "master" ]; then echo "latest"; else echo $TRAVIS_BRANCH ; fi`
+  - echo $REPO:$TAG
+  - docker build -f Dockerfile -t $REPO:$TRAVIS_COMMIT .
+  - docker tag $REPO:$TRAVIS_COMMIT $REPO:$TAG
+  - docker push $REPO:$TAG
