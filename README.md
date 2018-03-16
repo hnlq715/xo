@@ -1,5 +1,9 @@
 # About xo
 
+[![Build Status](https://travis-ci.org/hnlq715/xo.svg?branch=master)](https://travis-ci.org/hnlq715/xo)
+[![Docker Pulls](https://img.shields.io/docker/pulls/sophos/xo.svg)](https://hub.docker.com/r/sophos/xo/)
+[![Go Report Card](https://goreportcard.com/badge/github.com/hnlq715/xo)](https://goreportcard.com/report/github.com/hnlq715/xo)
+
 `xo` is a command-line tool to generate [Go](https://golang.org/project/)
 code based on a database schema or a custom query.
 
