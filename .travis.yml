@@ -9,11 +9,11 @@ go:
 - 1.9.4
 
 install:
-  - sudo cp -aL vendor/gopkg.in/rana/ora.v4/contrib/oci8_linux_amd64.pc /usr/lib/pkgconfig/oci8.pc
-  - ls /usr/lib/pkgconfig/
+  - go get github.com/golang/tools/cmd/goimports
+  - go install github.com/golang/tools/cmd/goimports
 
 script:
-  - go build
+  - GOOS=linux GOARCH=amd64 go build
 
 after_success:
   - echo $DOCKER_PASS | docker login -u "$DOCKER_USER" --password-stdin
