@@ -9,8 +9,8 @@ go:
 - 1.9.4
 
 install:
-  - go get github.com/golang/tools/cmd/goimports
-  - go install github.com/golang/tools/cmd/goimports
+  - go get golang.org/x/tools/cmd/goimports
+  - go install golang.org/x/tools/cmd/goimports
 
 script:
   - GOOS=linux GOARCH=amd64 go build
