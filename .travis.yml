@@ -12,8 +12,10 @@ install:
   - sudo cp -aL vendor/gopkg.in/rana/ora.v4/contrib/oci8_linux_amd64.pc /usr/lib/pkgconfig/oci8.pc
   - ls /usr/lib/pkgconfig/
 
-after_success:
+script:
   - env GOOS=linux GOARCH=386 go build
+
+after_success:
   - echo $DOCKER_PASS | docker login -u "$DOCKER_USER" --password-stdin
   - export REPO=sophos/xo
   - export TAG=`if [ "$TRAVIS_BRANCH" == "master" ]; then echo "latest"; else echo $TRAVIS_BRANCH ; fi`
